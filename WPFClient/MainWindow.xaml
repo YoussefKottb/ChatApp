@@ -1,0 +1,49 @@
+﻿<Window x:Class="WPFClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFClient"
+        mc:Ignorable="d" FontSize="18"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center">
+            <TextBox Name="serverUrl" MinWidth="300" Margin="20"/>
+            <Button Name="connect" Padding="20 10" Margin="20" Click="connect_Click">
+                Connect
+            </Button>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <TextBox Name="userInput" MinWidth="300" Margin="20"/>
+            <TextBlock Margin="20">Username</TextBlock>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center">
+            <TextBox Name="messageInput" MinWidth="300" Margin="20" />
+            <Button Name="sendMessage" Padding="20 10" Margin="20" Click="sendMessage_Click">
+                Send
+            </Button>
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="3" Margin="20" MaxHeight="200"
+                      VerticalScrollBarVisibility="Auto">
+            <ListBox Name="messages" HorizontalAlignment="Stretch"
+                     Padding="20 10" BorderThickness="0"/>
+        </ScrollViewer>
+
+        <Button x:Name="disconnect" Grid.Row="4" HorizontalAlignment="Center"
+                Padding="20 10" Margin="20" Click="disconnect_Click">
+            Disconnect
+        </Button>
+    </Grid>
+</Window>

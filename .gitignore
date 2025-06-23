@@ -1,0 +1,6 @@
+/.vs
+/BlazorServer/obj
+/BlazorServer/bin
+/BlazorServer/.vs
+/WPFClient/obj
+/WPFClient/bin
