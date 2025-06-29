@@ -1,6 +1,61 @@
-/.vs
-/BlazorServer/obj
-/BlazorServer/bin
-/BlazorServer/.vs
-/WPFClient/obj
-/WPFClient/bin
+# Visual Studio
+.vs/
+*.sln.docstates
+*.user
+*.suo
+*.opensdf
+*.VC.db
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.tmp
+*.log
+*.bak
+*.old
+*.obj
+*.user
+*.ide
+*.kproj
+*.swo
+*.swp
+*.bak
+publish/ # Directory for published output
+artifacts/ # Common directory for build artifacts
+
+# NuGet packages
+*.nupkg
+packages/
+*.nuget.log
+
+# Test results
+TestResults/
+*.trx
+
+# Node.js (if applicable)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Editors/OS
+.DS_Store
+Thumbs.db
+*.exe.config
+*.bat
+*.cmd
+.terraform/
+terraform.tfstate*
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# DotNet tool files
+.config/
